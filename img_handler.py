@@ -46,4 +46,4 @@ async def vs_create_animated(url1:str, url2:str):
         im.paste(f1, pos1)
         im.paste(f2, pos2)
         
-vs_bg.save(fp=os.path.join("./img/result.gif"),append_images = img, save_all = True,duration=20,)
+    vs_bg.save(fp=os.path.join("./img/result.gif"),append_images = img, save_all = True,duration=20,)

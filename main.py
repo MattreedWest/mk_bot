@@ -34,7 +34,7 @@ whitelist = {
 
 # Декоратор - проверка @allowed_channel => True/False
 def allowed_channel():
-    async def predicate(ctx:coommands.Context):
+    async def predicate(ctx:commands.Context):
         if ctx.guild.id in whitelist:
             if ctx.channel.id in whitelist[ctx.guild.id]:
                 return True
