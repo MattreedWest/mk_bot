@@ -1,0 +1,9 @@
+conf.py
+__pycache__
+.vscode
+FFmpeg
+img/*
+
+# Исклюючение
+!img/vs_bg_animated
+!img/vs_bg.png
