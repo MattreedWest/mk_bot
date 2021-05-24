@@ -4,7 +4,7 @@ from PIL import Image
 
 imgs = {
     "vs_bg": "./img/vs_bg.jpg",
-    "vs_bg_animated": "./img/vs_bg_animated/frame_*.jpg"
+    "vs_bg_gif": "./img/vs_bg_gif/frame_*.jpg"
 }
 
 async def vs_create(url1:str, url2:str):
@@ -29,7 +29,7 @@ async def vs_create(url1:str, url2:str):
 
 async def vs_create_animated(url1:str, url2:str):
     
-    vs_bg, *img = [Image.open(path) for img in glob.glob(imgs["vs_bg_animated"])]
+    vs_bg, *img = [Image.open(path) for img in glob.glob(imgs["vs_bg_gif"])]
 
     size = (150,150)
 
